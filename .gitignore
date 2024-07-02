@@ -1,0 +1,29 @@
+# Node modules
+/node_modules
+
+# Environment variables
+.env
+
+# Build output
+/dist
+/build
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local dependencies
+/.pnp
+.pnp.js
+
+# OS specific files
+.DS_Store
+
+# Editor-specific files
+.idea/
+.vscode/
+
+# Sensitive data
+/config.js
