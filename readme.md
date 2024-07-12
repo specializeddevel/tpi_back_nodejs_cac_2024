@@ -21,8 +21,12 @@ Si se cumplen los requerimientos, siga estos pasos para poner en marcha el proye
 
 `git clone https://github.com/specializeddevel/tpi_back_nodejs_cac_2024.git`
 
-2. Ingrese a la carpeta donde clono el proyecto y actualice las depencencias:
-   `npm i`
+2. Ingrese a la carpeta donde clono el proyecto:
+
+````cd tpi_back_nodejs_cac_2024
+
+3. Actualice las depencencias del proyecto:
+   ```npm i
 
 **La Base de Datos del proyecto se encuentra alojada en un servidor en la nube, por lo que no es necesario realizar ninguna configuracion sobre la misma, una vez que se configure el proyecto Node este se conectara automaticamente a la BD.**
 Para poner en marcha el proyecto por favor siga los siguientes pasos:
@@ -37,6 +41,8 @@ npm i = traemos ls dependencias en los modulos de node
 
 modulos
 https://www.npmjs.com/
+
+````
 
 ```
 

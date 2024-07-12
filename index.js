@@ -1,13 +1,10 @@
-const express = require("express");
-
-const app = express();
-const port = 3030;
-
-const cors = require("cors");
+const express = require ("express")
+const app = express()
+const port = 3030
+const cors = require ("cors")
+const db = require ("./data/db.js")
 
 const productosRouter = require("./routes/productosRouter.js");
-
-const db = require("./data/db.js");
 
 app.use(cors());
 app.use(express.json());
