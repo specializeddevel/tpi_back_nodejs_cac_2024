@@ -1,10 +1,19 @@
+# TRABAJO PRACTICO INTEGRADOR CURSO BACKEND JAVASCRIPT
+
 # API BÁSICA PARA CRUD DE PRODUCTOS EN UN E-COMMERCE
 
 ## INTRODUCCIÓN
 
 Este es el trabajo práctico integrador final del curso de Backend con NodeJS, ofrecido por Codo a Codo y la Agencia de Habilidades para el Futuro de Buenos Aires. Se ha desarrollado una API básica que realiza operaciones CRUD en una tabla de productos a través de llamadas específicas a un endpoint.
 
-## COMO PONER EN MARCHA EL PROYECTO?
+**Agradecemos la gran calidad de enseñanza y dedicación de nuestro profesor Gabriel Muñoz.**
+
+## INTEGRANTES DEL EQUIPO
+
+    * Burgos Murray Raul
+    * Labruna Axel
+
+## INSTRUCCIONES PARA PONER EN MARCHA EL PROYECTO
 
 ### REQUERIMIENTOS PREVIOS
 
@@ -19,44 +28,65 @@ Si se cumplen los requerimientos, siga estos pasos para poner en marcha el proye
 
 1. Clone el repositorio desde este repositorio con Git dentro de una carpeta en su computadora
 
-`git clone https://github.com/specializeddevel/tpi_back_nodejs_cac_2024.git`
+   -`git clone https://github.com/specializeddevel/tpi_back_nodejs_cac_2024.git`
 
 2. Ingrese a la carpeta donde clono el proyecto:
 
    -`cd tpi_back_nodejs_cac_2024`
 
-3. Actualice las depencencias del proyecto ejecutando:
+3. Actualice las dependencias del proyecto ejecutando:
 
    -`npm i`
 
-**NOTA. La Base de Datos del proyecto se encuentra alojada en un servidor en la nube, por lo que no es necesario realizar ninguna configuracion sobre la misma, una vez que se configure el proyecto Node este se conectara automaticamente a la BD.**
+4. Ejecute el proyecto:
 
-4.  Ejecute el proyecto:
+   -`npm run dev`
 
-    -`npm run dev`
+**NOTA: La base de datos del proyecto está alojada en un servidor en la nube, por lo que no es necesario realizar ninguna configuración adicional. Una vez que el proyecto Node.js esté configurado, se conectará automáticamente a la base de datos.**
 
-5.  Una vez iniciado el proyecto, podra consumir los endpoints de la siguiente manera:
+5.  Una vez iniciado el proyecto, podrá consumir los endpoints con el cliente de su preferencia, de la siguiente manera:
 
     #### Traer todos los productos registrados:
 
-        Metodo: GET
-        URL: `http://localhost:3030/productos/`
+        Método: GET
+        URL: http://localhost:3030/productos/
 
     #### Traer un producto especifico por su ID:
 
-        Metodo: GET
-        URL: `http://localhost:3030/productos/{id producto}`
+        Método: GET
+        URL:    http://localhost:3030/productos/{id producto}
 
-    #### Actualizar un producto:
+    #### Registrar un producto nuevo:
 
-        Metodo: POST
-        URL: `http://localhost:3030/productos/`
-        BODY JSON:
-        ```{
+        Método: POST
+        URL:    http://localhost:3030/productos/
+
+        BODY JSON DE EJEMPLO:
+            {
                 "nombre": "Producto X",
-                "descripcion": "Descripcion del producto XX",
+                "descripcion": "Descripción del producto XX",
                 "foto": "https://fotos.com/fotodeproductoX.jpg",
                 "precio": 500.5,
                 "cantidad_disponible": 20,
                 "sku": "prod-000X"
-            }```
+            }
+
+    #### Actualizar un producto:
+
+        Método: PUT
+        URL:    http://localhost:3030/productos/{id producto}
+
+        BODY JSON DE EJEMPLO:
+            {
+                "nombre": "Producto X modificado",
+                "descripcion": "Descripción del producto X modificada",
+                "foto": "https://fotos.com/fotodeproductoXmodificada.jpg",
+                "precio": 999.5,
+                "cantidad_disponible": 10,
+                "sku": "prod-000XM"
+            }
+
+    #### Eliminar un producto especifico por su ID:
+
+        Método: DELETE
+        URL:    http://localhost:3030/productos/{id producto}
