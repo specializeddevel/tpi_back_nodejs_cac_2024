@@ -1,6 +1,6 @@
 # TRABAJO PRACTICO INTEGRADOR CURSO BACKEND JAVASCRIPT
 
-# API BÁSICA PARA CRUD DE PRODUCTOS EN UN E-COMMERCE
+## API BÁSICA PARA CRUD DE PRODUCTOS
 
 ## INTRODUCCIÓN
 
@@ -26,23 +26,23 @@ Este es el trabajo práctico integrador final del curso de Backend con NodeJS, o
 
 Si se cumplen los requerimientos, siga estos pasos para poner en marcha el proyecto
 
-1. Clone el repositorio desde este repositorio con Git dentro de una carpeta en su computadora
+1.  Clone el repositorio desde este repositorio con Git dentro de una carpeta en su computadora
 
-   -`git clone https://github.com/specializeddevel/tpi_back_nodejs_cac_2024.git`
+    -`git clone https://github.com/specializeddevel/tpi_back_nodejs_cac_2024.git`
 
-2. Ingrese a la carpeta donde clono el proyecto:
+2.  Ingrese a la carpeta donde clono el proyecto:
 
-   -`cd tpi_back_nodejs_cac_2024`
+    -`cd tpi_back_nodejs_cac_2024`
 
-3. Actualice las dependencias del proyecto ejecutando:
+3.  Actualice las dependencias del proyecto ejecutando:
 
-   -`npm i`
+    -`npm i`
 
-4. Ejecute el proyecto:
+4.  Ejecute el proyecto:
 
-   -`npm run dev`
+    -`npm run dev`
 
-**NOTA: La base de datos del proyecto está alojada en un servidor en la nube, por lo que no es necesario realizar ninguna configuración adicional. Una vez que el proyecto Node.js esté configurado, se conectará automáticamente a la base de datos.**
+    **NOTA: La base de datos del proyecto está alojada en un servidor en la nube, por lo que no es necesario realizar ninguna configuración adicional. Una vez que el proyecto Node.js esté configurado, se conectará automáticamente a la base de datos.**
 
 5.  Una vez iniciado el proyecto, podrá consumir los endpoints con el cliente de su preferencia, de la siguiente manera:
 
