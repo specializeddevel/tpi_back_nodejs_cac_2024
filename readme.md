@@ -23,27 +23,26 @@ Si se cumplen los requerimientos, siga estos pasos para poner en marcha el proye
 
 2. Ingrese a la carpeta donde clono el proyecto:
 
-````cd tpi_back_nodejs_cac_2024
+   -`cd tpi_back_nodejs_cac_2024`
 
-3. Actualice las depencencias del proyecto:
-   ```npm i
+3. Actualice las depencencias del proyecto ejecutando:
 
-**La Base de Datos del proyecto se encuentra alojada en un servidor en la nube, por lo que no es necesario realizar ninguna configuracion sobre la misma, una vez que se configure el proyecto Node este se conectara automaticamente a la BD.**
-Para poner en marcha el proyecto por favor siga los siguientes pasos:
+   -`npm i`
 
-npm init (crear el package.json) npm init -y
+**NOTA. La Base de Datos del proyecto se encuentra alojada en un servidor en la nube, por lo que no es necesario realizar ninguna configuracion sobre la misma, una vez que se configure el proyecto Node este se conectara automaticamente a la BD.**
 
-- NPM (Node Package Manager)
+4.  Ejecute el proyecto:
 
-npm install nombreModulo - dependecia
+    -`npm run dev`
 
-npm i = traemos ls dependencias en los modulos de node
+5.  Una vez iniciado el proyecto, podra consumir los endpoints de la siguiente manera:
 
-modulos
-https://www.npmjs.com/
+    ####Traer todos los productos registrados:
 
-````
+        Metodo: GET
+        URL: `http://localhost:3030/productos/`
 
-```
+    ####Traer un producto especifico por su ID:
 
-```
+        Metodo: GET
+        URL: `http://localhost:3030/productos/{id producto}`
