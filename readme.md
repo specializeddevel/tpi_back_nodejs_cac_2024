@@ -37,12 +37,26 @@ Si se cumplen los requerimientos, siga estos pasos para poner en marcha el proye
 
 5.  Una vez iniciado el proyecto, podra consumir los endpoints de la siguiente manera:
 
-    ####Traer todos los productos registrados:
+    #### Traer todos los productos registrados:
 
         Metodo: GET
         URL: `http://localhost:3030/productos/`
 
-    ####Traer un producto especifico por su ID:
+    #### Traer un producto especifico por su ID:
 
         Metodo: GET
         URL: `http://localhost:3030/productos/{id producto}`
+
+    #### Actualizar un producto:
+
+        Metodo: POST
+        URL: `http://localhost:3030/productos/`
+        BODY JSON:
+        ```{
+                "nombre": "Producto X",
+                "descripcion": "Descripcion del producto XX",
+                "foto": "https://fotos.com/fotodeproductoX.jpg",
+                "precio": 500.5,
+                "cantidad_disponible": 20,
+                "sku": "prod-000X"
+            }```
